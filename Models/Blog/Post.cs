@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Roman015API.Models
+namespace Roman015API.Models.Blog
 {
     public class Post
     {

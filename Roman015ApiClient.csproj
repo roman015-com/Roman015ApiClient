@@ -4,11 +4,15 @@
     <TargetFramework>net5.0</TargetFramework>
     <RootNamespace>Roman015API</RootNamespace>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <PackageProjectUrl></PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/roman015-com/Roman015ApiClient</PackageProjectUrl>
     <RepositoryUrl>https://github.com/roman015-com/Roman015ApiClient</RepositoryUrl>
     <Description>Api Client to be used with other applications to interact with Roman015API in a controlled manner.</Description>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <PackageReleaseNotes>Rearranged Models</PackageReleaseNotes>
+    <FileVersion>1.0.0.0</FileVersion>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
   <ItemGroup>
