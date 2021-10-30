@@ -13,7 +13,7 @@ using System.Threading.Tasks;
 
 namespace Roman015API.Clients
 {
-    class BlogEditorAPIClient
+    public class BlogEditorAPIClient
     {
         private readonly HttpClient Http;
         private readonly IAccessTokenProvider TokenProvider;
