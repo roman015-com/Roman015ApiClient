@@ -15,6 +15,7 @@ namespace Roman015API.Models.Blog
         public DateTime LastModifiedOn { get; set; }
         public List<string> Tags { get; set; }
         public string PostMarkDown { get; set; }
+        public string PostHTML => Markdig.Markdown.ToHtml(PostMarkDown);
 
         public Post() { }
 
