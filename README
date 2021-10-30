@@ -1,0 +1,7 @@
+# ROMAN015 API Client
+
+Contains code for other endpoints to use.
+
+## Notes
+
+* Update Version number with each commit, else package won't compile
