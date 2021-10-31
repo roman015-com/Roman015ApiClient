@@ -42,8 +42,8 @@ namespace Roman015API.Clients
             return testSignalRHub;
         }
 
-        public event Func<Exception, Task> Closed;
-        public event Func<string, Task> TestMessage;
+        public event Action<Exception> Closed;
+        public event Action<string> TestMessage;
         public async void StartConnection()
         {
             await hubConnection.StartAsync();
