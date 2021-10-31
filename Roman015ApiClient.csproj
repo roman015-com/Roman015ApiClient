@@ -10,9 +10,9 @@
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
-    <PackageReleaseNotes>TestSignalRHub Modified</PackageReleaseNotes>
+    <PackageReleaseNotes>Add StarWarsHub</PackageReleaseNotes>
     <FileVersion>1.0.0.0</FileVersion>
-    <Version>1.0.5</Version>
+    <Version>1.0.6</Version>
   </PropertyGroup>
 
   <ItemGroup>
