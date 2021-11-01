@@ -7,15 +7,21 @@ using System.Threading.Tasks;
 
 namespace Roman015API.Clients
 {
-    public class StarWarsHub
+    public class StarWarsHub : IDisposable
     {
         private static HubConnection hubConnection;
         private static StarWarsHub starWarsHub;
+        private static bool? IsJedi;
 
         public event Action<Exception> Closed;
         public event Action<int, int> OnOrder66Executed;
 
         private StarWarsHub() { }
+
+        public void Dispose()
+        {
+            starWarsHub?.LeaveSide();
+        }
 
         public static StarWarsHub GetSingletonInstance()
         {
@@ -48,6 +54,16 @@ namespace Roman015API.Clients
         public async void JoinSide(bool isJedi)
         {
             await hubConnection.SendAsync("JoinSide", isJedi);
+
+            IsJedi = isJedi;
+        }
+
+        public async void LeaveSide()
+        {
+            if (IsJedi.HasValue)
+            {
+                await hubConnection.SendAsync("LeaveSide", IsJedi.Value);
+            }                
         }
 
         public async void StartConnection()
