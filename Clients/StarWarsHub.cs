@@ -44,6 +44,7 @@ namespace Roman015API.Clients
                 });
                 hubConnection.On<int, int>("Order66Executed", (jedi, sith) =>
                 {
+                    IsJedi = null;
                     starWarsHub.OnOrder66Executed?.Invoke(jedi, sith);
                 });
             }            
