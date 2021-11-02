@@ -53,9 +53,12 @@ namespace Roman015API.Clients
         }
 
         public async void JoinSide(bool isJedi)
-        {            
-            await hubConnection.SendAsync(IsJedi.HasValue ? "SwitchSide" : "JoinSide", isJedi);
-            IsJedi = isJedi;
+        {
+            if (!IsJedi.HasValue || (isJedi != IsJedi.Value))
+            {
+                await hubConnection.SendAsync(IsJedi.HasValue ? "SwitchSide" : "JoinSide", isJedi);
+                IsJedi = isJedi;
+            }
         }
 
         public async void LeaveSide()

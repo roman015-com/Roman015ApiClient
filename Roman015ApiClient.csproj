@@ -10,9 +10,9 @@
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
-    <PackageReleaseNotes>StarWarsHub Tweaks</PackageReleaseNotes>
+    <PackageReleaseNotes>Allow switching to different side only</PackageReleaseNotes>
     <FileVersion>1.0.0.0</FileVersion>
-    <Version>1.0.10</Version>
+    <Version>1.0.11</Version>
   </PropertyGroup>
 
   <ItemGroup>
